@@ -34,6 +34,8 @@ public class Application {
         	System.out.println("Nom :"+c.getNom());
 
         	System.out.println("Tel :"+c.getNumeroTel());
+        	System.out.println("contact");
+
         	
         	
         }
