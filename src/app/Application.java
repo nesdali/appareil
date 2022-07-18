@@ -20,8 +20,8 @@ public class Application {
 		try {
 		Contact c=appareil.consulter(1);
 		System.out.println("Num="+c.getNumero());
-		System.out.println("Num="+c.getNom());
-		System.out.println("Num="+c.getNumeroTel());
+		System.out.println("Nom="+c.getNom());
+		System.out.println("Tel="+c.getNumeroTel());
 			} catch (Exception e) {
 				System.out.println(e.getMessage());		
 
@@ -30,7 +30,11 @@ public class Application {
         System.out.println("Consulter les contacts par mot clé");
         List<Contact> contacts=appareil.consulter("C");
         for (Contact c:contacts) {
-        	System.out.println();
+        	System.out.println("---------------");
+        	System.out.println("Nom :"+c.getNom());
+
+        	System.out.println("Tel :"+c.getNumeroTel());
+        	
         	
         }
 		
